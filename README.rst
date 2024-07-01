@@ -9,6 +9,7 @@ An updated toolkit for using USGS Isis in Python. Features:
 
 * A pysis fork that actually works with newer versions of USGS Isis
 * A new method for retrieving data from pixels via pixelinfo.py
+* New high-level functions for ease of processing through multiple missions of data
 * Quality of life changes that keep pysis up to date with newer python versions
 
 * Free software: BSD license
