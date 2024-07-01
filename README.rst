@@ -1,5 +1,5 @@
 ===============================
-Pysis
+Pisis
 ===============================
 
 .. image:: https://badge.fury.io/py/pysis.svg
@@ -12,7 +12,7 @@ Pysis
         :target: https://pypi.python.org/pypi/pysis
 
 
-Toolkit for using USGS Isis in Python.
+An updated toolkit for using USGS Isis in Python.
 
 * Free software: BSD license
 * Documentation: http://pysis.readthedocs.org.
