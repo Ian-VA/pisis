@@ -37,7 +37,7 @@ def file_variations(filename, extensions):
     :param extensions: A list of file extensions to generate new filenames.
     """
     (label, ext) = splitext(filename)
-    return [label + extention for extention in extensions]
+    return [label + extension for extension in extensions]
 
 
 class ImageName(str):
