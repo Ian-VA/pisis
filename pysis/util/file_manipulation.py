@@ -39,6 +39,20 @@ def file_variations(filename, extensions):
     (label, ext) = splitext(filename)
     return [label + extension for extension in extensions]
 
+def create_file_group(path_to_files):
+    """
+    Returns a list of the names of all ISIS cubes in a path. 
+    Note that by default the list comes back sorted lexacographically.
+
+    :param path_to_files: The path in which the ISIS cubes are located.
+    """
+
+    cubes = []
+
+    for i in os.listdir():
+        cubes.append(i)
+
+    return cubes
 
 class ImageName(str):
     def __getattr__(self, name):
