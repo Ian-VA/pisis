@@ -5,7 +5,7 @@ Pisis
 .. image:: https://badge.fury.io/py/pysis.svg
     :target: http://badge.fury.io/py/pysis
 
-An updated toolkit for using USGS Isis in Python. 
+An updated toolkit for using USGS Isis in Python. Features:
 
 * A pysis fork that actually works with newer versions of USGS Isis
 * A new method for retrieving data from pixels via pixelinfo.py
