@@ -6,7 +6,7 @@ from numbers import Number
 import numpy as np
 import tempfile
 
-def point_info(cube_path, x, y, point_type, allow_outside=False):
+def point_info(cube_path, x, y, point_type, key=None, allow_outside=False):
     """
     Use Isis's campt to get image/ground point info from an image
     Parameters
@@ -23,6 +23,9 @@ def point_info(cube_path, x, y, point_type, allow_outside=False):
                  Options: {"image", "ground"}
                  Pass "image" if  x,y are in image space (sample, line) or
                  "ground" if in ground space (longitude, lattiude)
+
+    key : string
+        a certain key in the resulting pvlfile.
     Returns
     -------
     : PvlObject
@@ -66,8 +69,8 @@ def point_info(cube_path, x, y, point_type, allow_outside=False):
             pvlres["GroundPoint"]["Sample"] -= .5
             pvlres["GroundPoint"]["Line"] -= .5
 
-
-    return pvlres
+    if key == None: return pvlres 
+    else: return pvlres[key]
 
 
 def image_to_ground(cube_path, sample, line, lattype="PlanetocentricLatitude", lonttype="PositiveEast360Longitude"):
