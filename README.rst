@@ -19,7 +19,7 @@ How to install
 
 At the command line::
 
-    $ pip install -e git+https://github.com/Ian-VA/pisis
+    $ pip install -e git+https://github.com/Ian-VA/pisis#egg=pysis
 
 Dependencies
 ~~~~~~~~~~~~
