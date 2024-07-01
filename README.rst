@@ -5,31 +5,21 @@ Pisis
 .. image:: https://badge.fury.io/py/pysis.svg
     :target: http://badge.fury.io/py/pysis
 
-.. image:: https://travis-ci.org/wtolson/pysis.svg?branch=master
-        :target: https://travis-ci.org/wtolson/pysis
+An updated toolkit for using USGS Isis in Python. 
 
-.. image:: https://pypip.in/d/pysis/badge.png
-        :target: https://pypi.python.org/pypi/pysis
-
-
-An updated toolkit for using USGS Isis in Python.
+Features:
+* A pysis fork that actually works with newer versions of USGS Isis
+* A new method for retrieving data from pixels via pixelinfo.py
+* Quality of life changes that keep pysis up to date with newer python versions
 
 * Free software: BSD license
-* Documentation: http://pysis.readthedocs.org.
-
 
 How to install
 --------------
 
 At the command line::
 
-    $ easy_install pysis
-
-Or, if you have virtualenvwrapper installed::
-
-    $ mkvirtualenv pysis
-    $ pip install pysis
-
+    $ pip install -e git+https://github.com/Ian-VA/pisis
 
 Dependencies
 ~~~~~~~~~~~~
@@ -52,7 +42,7 @@ commands (examples for the MDIS camera on the MESSENGER mission)::
     spiceinit from=filename.cub
     mdiscal from=filename.cub to=filename.cal.cub
 
-using Pysis the syntax is::
+using Pisis the syntax is::
 
     from pysis.isis import mdis2isis, spiceinit, mdiscal
     from pysis.util import file_variations
