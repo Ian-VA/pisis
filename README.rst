@@ -24,7 +24,7 @@ At the command line::
 Dependencies
 ~~~~~~~~~~~~
 
-For working with ISIS commands, you must firts have `USGS ISIS 3`_ installed on
+For working with ISIS commands, you must first have `USGS ISIS 3`_ installed on
 your machine. See the ISIS 3 `installation guide`_ for further instructions.
 Remember to set your environmental variables (see step 4 of USGS ISIS guide) so
 Pysis knows where your installation is.
